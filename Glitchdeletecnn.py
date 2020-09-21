@@ -11,11 +11,6 @@ import pandas as pd
 import os
 import savemodule
 
-test = loadmodule.load()
+image_array = loadmodule.load_image()
 
-#images = np.load('gray_scale.npy')
-#image1 = images[0][1]
-#mainimage = tf.keras.preprocessing.image.array_to_img(image1)
-#Image = tf.keras.preprocessing.image.array_to_img(test)
-
-savemodule.saveimage(test)
+savemodule.save_image(image_array)

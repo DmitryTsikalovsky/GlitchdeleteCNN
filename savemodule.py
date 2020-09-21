@@ -1,8 +1,7 @@
-from PIL import Image
 from keras.preprocessing.image import array_to_img
 import tensorflow as tf
-def saveimage(img):
-    Image = tf.keras.preprocessing.image.array_to_img(img)
-    path = input("Write your path to save (like D:\\foldername):")
-    Image.save(path +'\glitchdelete.jpg', 'JPEG')
-    print('successfully saved in ' + path +'\nImage name: glitchdelete.jpg')
+def save_image(img):
+    image = tf.keras.preprocessing.image.array_to_img(img)
+    save_path = input("Write your path to save (like D:\\foldername):")
+    image.save(save_path +'\glitchdelete.jpg', 'JPEG')
+    print('successfully saved in ' + save_path +'\nImage name: glitchdelete.jpg')
